@@ -31,8 +31,8 @@ def config_switches(switches, commands):
 
 def main():
     plink = 'C:\\users\\crosbyg\\desktop\\plink.exe'
-    switches_list = raw_input('What switches do you want to configure? \n')
-    cmd_list = raw_input("what commands do you wish to issue? \n")
+    switches_list = raw_input('What switches do you want to configure? \n') #input name of txt file with list of switch ips
+    cmd_list = raw_input("what commands do you wish to issue? \n") #again, txt file with list of cmds
      
     switches = open(switches_list).read().splitlines()
     commands = open(cmd_list).read()
